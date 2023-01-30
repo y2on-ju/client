@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 더욱 구체적으로 선택할 수록 우선순위가 높다.*/
+        /* specificity*/
+        /* element selector:1점, class selector:10점, id selector:100점 */
+        /*같은 점수일경우 밑에(최신) 있는게 적용됨*/
+        h1{
+            border: 5px solid;
+        }
+
+        h1.note{
+            border:5px dotted;
+        }
+
+        h1.note.error{
+            border: 5px dotted darkblue;
+        }
+
+        .note.error{
+            border:5px outset;
+        }
+
+        h1.note.error{
+            border:5px outset darkgoldenrod;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note error">Lorem, ipsum dolor.</h1>
+</body>
+</html>
