@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            height: 100vh;
+        }
+        div{
+            border: 5px solid;
+            
+        }
+        div:nth-child(even){
+            color: rgb(236, 188, 28);
+        }
+        #box1{
+            width: 100px;
+            height: 50px;
+        }
+        #box2{
+            width: 50px;
+            height:100px;
+        }
+        /* viewport width 화면창 크기 기준 */
+        #box3{
+            width: 50vw;
+
+            /* viewport height */
+            height: 50vh;
+        }
+
+        #box4{
+            /* %: 부모요소 기준 */
+            /* height는  기준값있어야 정상작동됨 ->body{height:100vh} */
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+<head>
+<body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    <div id="box5">box5</div>
+    <div id="box6">box6</div>
+    <div id="box7">box7</div>
+    <div id="box8">box8</div>
+    <div id="box9">box9</div>
+    <div id="box10">box10</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div{
+            background-color: salmon;
+            border:5px solid slateblue;
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            margin: 20px;
+            /* display: inline 은
+            width, height, padding,margin을 예상하기 힘듦
+            그래서 width, height,padding, margin을 개발자가 원하는대로
+            그리고 같은줄에 배치하고 싶을때는 
+            display: inline-bloock 으로 하면됨 */
+            display: inline-block;
+        }
+        div:nth-child(even){
+            border: 5px solid olive;
+        }
+    </style>
+<head>
+<body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    <div id="box5">box5</div>
+</body>
+</html>
