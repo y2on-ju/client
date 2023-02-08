@@ -12,24 +12,28 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
-
-    // while
-
     console.log(1);
-    while (/*조건*/ true) {
-        
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
+    console.log(2);
+    console.log(3);
 
-        // code block
-        console.log(2);
-        console.log(3);
+
+    //함수(function)작성방법
+    //function 함수 이름(파라미터1, 파라미터2) {실행될 코드들}
+    function a() {
+        //함수(function)
+        //바로 실행되지 않고
+        // 나중에 실행하기 위해 묶은 코드들
+        console.log(4);
+        console.log(5);
     }
-    
-    console.log(4);
-    
+
+    console.log(6);
+
+    //함수 실행 방법
+    //함수명(아규먼트1,아규먼트2)
+
+    a();
+
     </script>
 </body>
 </html>

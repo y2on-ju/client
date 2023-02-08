@@ -12,24 +12,29 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
-
-    // while
-
-    console.log(1);
-    while (/*조건*/ true) {
+    function a(params) {
+        console.log("어떤 일을 함");
         
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
     }
-    
-    console.log(4);
-    
+
+    function b(params) {
+        console.log("b함수가 일함");
+
+
+        //함수의 실행 결과
+        // 결과값 return(반환)
+        return "어떤 결과";
+    }
+
+    b(5);
+    b(6);
+
+    let r1 = a(); // 결과 없음
+    let r2 = b(); //결과 있음 (return의 오른쪽값)
+
+    console.log(r1); //undefined
+    console.log(r2); //어떤 결과
+    console.log(b());
     </script>
 </body>
 </html>

@@ -12,24 +12,48 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
-
-    // while
-
-    console.log(1);
-    while (/*조건*/ true) {
-        
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
+    function a() {
+        console.log("파라미터 없는 함수");
     }
-    
-    console.log(4);
-    
+
+    a();
+    a(33); //의미 없음
+
+    function b(param1,param2) {
+        console.log("파라미터 2개 있는 함수");
+        console.log(param1,param2);
+        
+    }
+
+    b();
+    b(99);
+    b(11,22); // 인수는 매개변수 순서에 맞게 들어감
+
+    function printDouble(num) {
+        let d = num *2;
+        console.log(d);
+        
+    }
+    printDouble(3); //6
+    printDouble(4); //8
+
+
+
+    //두개의 수를 넣었을때 더한값이 출력되도록 해보세여
+
+    function printSum(num1, num2) {
+        let e = num1+num2
+        console.log(e);
+        
+        // console.log(num1 + num2); 로 작성하면 한줄만에 끝.!
+    }
+
+    printSum(3,4);
+    printSum(100,200);
+    printSum("java", "css");
+
+
+
     </script>
 </body>
 </html>

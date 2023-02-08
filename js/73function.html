@@ -12,24 +12,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
-
-    // while
-
-    console.log(1);
-    while (/*조건*/ true) {
+        a(); // 함수정의 전에 실행가능하지만 안될때도 있음 되도록이면 함수 정의 후 실행 코드 작성
+        console.log(1);
+    
+    function a() {
+        console.log("abc");
+        console.log("def");
         
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
     }
-    
-    console.log(4);
-    
+    console.log(2);
+
+    a();
+    a();
+    a();
     </script>
 </body>
 </html>

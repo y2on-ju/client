@@ -12,24 +12,24 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
+        // return : 1. 오른쪽 값 반환
+                // 2. 함수 종료
+        function whichMovie(age) {
+            if (age >=20) {
+                return "데드풀";
+            } else if (age >=15) {
+                return "어벤져스";
+            } else if (age >= 5) {
+            return "뽀로로";
+            }
+            
+            console.log("리턴 이후의 코드"); //실행되지 않음
+        }
+    let age = +prompt("나이를 입력해주세요",0)
 
-    // while
+    let movie = whichMovie(age);
 
-    console.log(1);
-    while (/*조건*/ true) {
-        
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
-    }
-    
-    console.log(4);
-    
+    console.log(movie);
     </script>
 </body>
 </html>

@@ -12,24 +12,24 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
+        // first-class function
+    // -인수로 전달 가능
+    // - 값으로 반환 가능
+    // - 변수에 할당 가능
+    // - 데이터 구조에 저장 가능
 
-    // while
+    //. 변수에 할당 가능
+    function a() {
+        console.log("a라는 함수가 실행하는 코드들...");
 
-    console.log(1);
-    while (/*조건*/ true) {
-        
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
     }
-    
-    console.log(4);
-    
+
+    let b;
+    b = a; //함수 자체
+
+
+    a(); //함수 호출(실행)
+    b();
     </script>
 </body>
 </html>

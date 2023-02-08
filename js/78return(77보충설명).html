@@ -12,24 +12,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
+    function a() {
+        //....
+        //...
+        console.log("에이 함수 실행 중....");
 
-    // while
-
-    console.log(1);
-    while (/*조건*/ true) {
-        
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
+        return 9;
     }
-    
-    console.log(4);
-    
+
+    let b = a(); //a함수 실행-> a함수안에 출력코드가 있어서 "에이 함수 실행 중" 출력됨-> b에 9반환(대입)됨
+
+    console.log("또 다른 실행 코드들 실행......");
+
+    console.log("b에 저장된 값 활용", b); 
     </script>
 </body>
 </html>

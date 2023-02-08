@@ -12,24 +12,20 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
+    let a = ['java', 'css','spring', 'jsp'];
 
-    // while
-
-    console.log(1);
-    while (/*조건*/ true) {
+    for (let i = 0; i < a.length; i++) {
+       console.log(a[i]);
         
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
     }
-    
-    console.log(4);
-    
+
+    for (let i = 1; i <= a.length; i++) {
+        console.log(a[a.length - i]);
+    }
+
+    for (let i = a.length-1; i >= 0; i--) {
+        console.log(a[i]);
+    }
     </script>
 </body>
 </html>

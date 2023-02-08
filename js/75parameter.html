@@ -12,24 +12,25 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
-
-    // while
-
-    console.log(1);
-    while (/*조건*/ true) {
-        
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
+    function a() {
+        console.log("java");
     }
-    
-    console.log(4);
-    
+
+    a();
+
+    // 함수정의 할 때 ()내의 parameter(매개변수) 목록 작성 가능
+    // 파라미터이름은 lowerCamelCase 관습 따름
+    // 파라미터는 함수호출할 때 값을 받음
+    function b(param) {
+        console.log("b함수 실행됨");
+        console.log(param);
+    }
+
+    b();
+    b(3); //argument(인수,인자): 전달하는 값
+    b("javascript");
+    b([3,4,5]);
+    b({addres: "seoul", age: "35"})
     </script>
 </body>
 </html>

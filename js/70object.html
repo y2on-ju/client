@@ -12,24 +12,27 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
-
-    // while
-
-    console.log(1);
-    while (/*조건*/ true) {
-        
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
-    }
     
-    console.log(4);
-    
+    let a =['java','spring',55];
+    console.log(a[0]);
+    console.log(a[2]);
+
+    //object : 여러 값을 저장한 자료형 (data type)
+    //사용기호:{}
+    //각 값에 이름을 명시(property)
+
+    let b = {lang: "java",frame: "spring", age: 55};
+
+    // 값을 읽을 때 ["property name"]  (거의 안쓰임)
+    console.log(b["lang"]); // 값을 저장하고 있는 이름을 string으로 넣어주면 됨
+    console.log(b["frame"]);
+    console.log(b["age"]);
+    //값을 읽을 때  .prpertyName 사용 (이형태를 훨씬 많이 쓰임)
+    console.log(b.lang);
+    console.log(b.frame);
+    console.log(b.age);
+
+
     </script>
 </body>
 </html>

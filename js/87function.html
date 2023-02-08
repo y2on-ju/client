@@ -12,24 +12,22 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
+    //데이터 구조에 저장 가능
 
-    // while
-
-    console.log(1);
-    while (/*조건*/ true) {
+    function d() {
+        console.log("디 함수 실행");
         
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
     }
-    
-    console.log(4);
-    
-    </script>
+
+    let e = {
+        name: "son",
+        age: 33,
+        z: d
+    };
+
+    console.log(e.name);
+    console.log(e.age);
+    console.log(e.z);
+</script>
 </body>
 </html>

@@ -12,24 +12,20 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 반복문 (loop) : while, for
+    // first-class function
+    //인수로 전달 가능
 
-    // while
-
-    console.log(1);
-    while (/*조건*/ true) {
-        
-        // 조건이 true 이면 code block 실행
-        // 다시 조건 확인
-        // 조건이 false이면 다음 실행 흐름으로 이어감
-
-        // code block
-        console.log(2);
-        console.log(3);
+    function a() {
+        console.log("에이 함수 실행됨....");
     }
-    
-    console.log(4);
-    
+
+    function b(param) {
+        console.log(param);
+        param();
+    }
+
+    // b("hello");
+    b(a); 
     </script>
 </body>
 </html>
