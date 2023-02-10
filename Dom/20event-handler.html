@@ -12,8 +12,23 @@
     <input type="text" id="input1">
     <ul id="list1"></ul>
 
+    <hr>
+    <input type="text" id="input2">
+    <ul id="list2"></ul>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        // jquery
+        $("#input2").keyup(function(e) {
+            if (e.key === "Enter") {
+                $("#list2").append(`<li>${$(this).val()}</li>`);
+                $(this).val("");
+            }
+        });
+
+
+        //보통의 자바스크립트 코드(vanilla javascript)
     document.querySelector("#input1").addEventListener("keyup", function(e) {
         if (e.key === "Enter") {
             let li = document.createElement("li");
